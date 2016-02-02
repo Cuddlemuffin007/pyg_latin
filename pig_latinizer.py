@@ -18,6 +18,8 @@ def starts_with_vowel(test_str):
 
 # checks to see if string starts with a digraph or trigraph
 # Returns False if not, else digraphs return 2, trigraphs return 3
+# IF the word ends in di or trigraph + PIGENDING, returns a negative value
+# which corresponds to slice for decoding
 def start_or_end_with_di_or_trigraph(test_str):
     digraphs = ['bl', 'br', 'ch', 'ck', 'cl',
                 'cr', 'dr', 'fl', 'fr', 'gh',
